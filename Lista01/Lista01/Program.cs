@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +21,7 @@ namespace Lista01
             float salarioMinimoLiquido = salarioLiquido / salarioMinimo;
             Console.Write($"O salarío da pessoa é igual a {salarioMinimoLiquido} salarios mínimos");
             Console.ReadKey();
-            
+
         }
 
         static void Exercicio2()
@@ -41,7 +41,7 @@ namespace Lista01
             Console.Write("Digite uma temperatura em Fahrenheit: ");
             float fahrenheit = float.Parse(Console.ReadLine());
 
-            float celsiusA = (float)((fahrenheit - 32.0) * (5.0/9.0));
+            float celsiusA = (float)((fahrenheit - 32.0) * (5.0 / 9.0));
             int celsiusB = (int)((fahrenheit - 32) * ((float)5 / 9));
 
             Console.Write($"O valor {fahrenheit} em graus Celsius é {celsiusA}° C em ponto flutuante e {celsiusB}° C em inteiro.");
@@ -57,34 +57,34 @@ namespace Lista01
 
             double imc = peso / (altura * altura);
 
-            Console.Write('O IMC é:' + imc);
+            Console.Write("O IMC é:" + imc);
             if (imc < 16.9F)
             {
-                Console.Write('Muito abaixo do peso!');
+                Console.Write("Muito abaixo do peso!");
             }
             else if (imc >= 17 && imc <= 18.4)
             {
-                Console.Write('Abaixo do peso!');
+                Console.Write("Abaixo do peso!");
             }
             else if (imc >= 18.5 && imc <= 24.9)
             {
-                Console.Write('Peso normal!');
+                Console.Write("Peso normal!");
             }
             else if (imc >= 25 && imc <= 29.9)
             {
-                Console.Write('Acima do peso!');
+                Console.Write("Acima do peso!");
             }
             else if (imc >= 30 && imc <= 34.9)
             {
-                Console.Write('Obesidade grau I!');
+                Console.Write("Obesidade grau I!");
             }
             else if (imc >= 35 && imc <= 40)
             {
-                Console.Write('Obesidade grau II!');
+                Console.Write("Obesidade grau II!");
             }
             else
             {
-                Console.Write('Obesidade grau III!');
+                Console.Write("Obesidade grau III!");
             }
 
             Console.ReadKey();
@@ -92,19 +92,19 @@ namespace Lista01
 
         static void Exercicio5()
         {
-            Console.Write('Digite a primeira nota: ');
+            Console.Write("Digite a primeira nota: ");
             float n1 = float.Parse(Console.ReadLine());
-            Console.Write('Digite seu peso: ');
+            Console.Write("Digite seu peso: ");
             float p1 = float.Parse(Console.ReadLine());
 
-            Console.Write('Digite a segunda nota: ');
+            Console.Write("Digite a segunda nota: ");
             float n2 = float.Parse(Console.ReadLine());
-            Console.Write('Digite seu peso: ');
+            Console.Write("Digite seu peso: ");
             float p2 = float.Parse(Console.ReadLine());
 
-            Console.Write('Digite a terceira nota: ');
+            Console.Write("Digite a terceira nota: ");
             float n3 = float.Parse(Console.ReadLine());
-            Console.Write('Digite seu peso: ');
+            Console.Write("Digite seu peso: ");
             float p3 = float.Parse(Console.ReadLine());
 
             float mediaponderada = (n1 * p1 + n2 * p2 + n3 * p3) / (p1 + p2 + p3);
@@ -115,10 +115,10 @@ namespace Lista01
 
         static void Exercicio6()
         {
-            Console.Write('Digite o valor da massa(m): ');
+            Console.Write("Digite o valor da massa(m): ");
             float massa = float.Parse(Console.ReadLine());
 
-            Console.Write('Digite o valor da velocidade(a): ');
+            Console.Write("Digite o valor da velocidade(a): ");
             float velocidade = float.Parse(Console.ReadLine());
 
             float forca = (float)(massa * velocidade);
@@ -129,55 +129,55 @@ namespace Lista01
 
         static void Exercicio7()
         {
-            Console.WriteLine("Digite o salário atual do funcionário:");
+            Console.Write("Digite o salário atual do funcionário:");
             double salario = double.Parse(Console.ReadLine());
 
             double novoSalario = salario * 1.337;
-            Console.Write($"Novo salário é {novosalario}");
-            Console.ReadKey();  
+            Console.Write($"Novo salário é {novoSalario}");
+            Console.ReadKey();
         }
 
         static void Exercicio8()
         {
-            Console.Write('Digite o valor em Reais (R$): ');
+            Console.Write("Digite o valor em Reais (R$): ");
             float reais = float.Parse(Console.ReadLine());
-            Console.Write('Digite a cotação do Dolar (U$): ');
+            Console.Write("Digite a cotação do Dolar (U$): ");
             float cotacao = float.Parse(Console.ReadLine());
 
             float dolar = (float)(reais * cotacao);
             Console.Write($"O valor de R${reais} em Dolar é U${dolar}");
-            Console.ReadKey();  
+            Console.ReadKey();
 
         }
 
         static void Exercicio9()
         {
-            Console.Write('Digite um valor inteiro: ');
-            int num = Console.ReadLine();
+            Console.Write("Digite um valor inteiro: ");
+            int num = int.Parse(Console.ReadLine());
 
             int antecessor = (num * num * num) - 1;
             int sucessor = (num * num) + 1;
             int soma = antecessor + sucessor;
 
             Console.Write($"O antecessor do seu triplo é {antecessor} e o sucessor do seu dobro é {sucessor}, sua soma é {soma}");
-            Console.ReadKey();  
+            Console.ReadKey();
         }
 
         static void Exercicio10()
         {
-            Console.Write('Digite um número inteiro de 4 digitos: ');
-            int numero = Console.ReadLine();
+            Console.Write("Digite um número inteiro de 4 digitos: ");
+            int numero = int.Parse(Console.ReadLine());
 
             int milhar = numero / 1000;
             int centena = (numero % 1000) / 100;
             int dezena = (numero % 100) / 10;
             int unidade = numero % 10;
-                        
+
             Console.WriteLine(milhar);
             Console.WriteLine(centena);
             Console.WriteLine(dezena);
             Console.WriteLine(unidade);
-            Console.ReadKey;
+            Console.ReadKey();
         }
 
         static void Exercicio11()
@@ -201,7 +201,7 @@ namespace Lista01
         {
 
             int opcao = -1;
-            
+
 
             while (opcao != 0)
             {
@@ -218,7 +218,8 @@ namespace Lista01
                     "09.......Exercício09\n" +
                     "10.......Exercício10\n" +
                     "11.......Exercício11\n" +
-                    "12.......Exercício12\n\n");
+                    "12.......Exercício12\n" +
+                    "0.......Sair\n\n");
 
                 Console.Write("Digite a opção: ");
                 opcao = int.Parse(Console.ReadLine());
@@ -263,7 +264,7 @@ namespace Lista01
                         break;
                     default:
                         break;
-                 
+
                 }
             }
 
