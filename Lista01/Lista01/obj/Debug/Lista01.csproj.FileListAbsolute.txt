@@ -6,3 +6,11 @@ C:\Users\cj3014771\source\repos\Lista01\Lista01\bin\Debug\Lista01.exe
 C:\Users\cj3014771\source\repos\Lista01\Lista01\bin\Debug\Lista01.pdb
 C:\Users\cj3014771\source\repos\Lista01\Lista01\obj\Debug\Lista01.exe
 C:\Users\cj3014771\source\repos\Lista01\Lista01\obj\Debug\Lista01.pdb
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\obj\Debug\Lista01.csproj.AssemblyReference.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\obj\Debug\Lista01.csproj.SuggestedBindingRedirects.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\obj\Debug\Lista01.csproj.CoreCompileInputs.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\obj\Debug\Lista01.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\obj\Debug\Lista01.pdb
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\bin\Debug\Lista01.exe.config
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\bin\Debug\Lista01.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista01\Lista01\bin\Debug\Lista01.pdb
