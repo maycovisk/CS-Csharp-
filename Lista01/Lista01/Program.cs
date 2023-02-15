@@ -184,10 +184,10 @@ namespace Lista01
         {
             double valorInvestimento = 1000.0;
 
-            valorInvestimento = valorInvestimento * (1 - 0.124);  // queda de 12,4%
-            valorInvestimento = valorInvestimento * (1 + 0.018);  // subida de 1,8%
-            valorInvestimento = valorInvestimento * (1 + 0.056);  // subida de 5,6%
-            valorInvestimento = valorInvestimento * (1 - 0.045);  // queda de 4,5%
+            valorInvestimento *= (1 - 0.124);  // queda de 12,4%
+            valorInvestimento *= (1 + 0.018);  // subida de 1,8%
+            valorInvestimento *= (1 + 0.056);  // subida de 5,6%
+            valorInvestimento *= (1 - 0.045);  // queda de 4,5%
 
             Console.WriteLine($"O valor atual do investimento de Marquesito é R${valorInvestimento}");
         }
@@ -195,26 +195,26 @@ namespace Lista01
         static void Exercicio12()
         {
             double pesoIdealHomem, pesoIdealMulher, altura;
-            Console.Write("Digite a altura: ");
-            altura = Console.ReadLine();
+            Console.Write("Digite a altura em metros: ");
+            altura = double.Parse(Console.ReadLine());
             Console.Write("Digite seu sexo (M para masculino ou F para feminino): ");
-            char sexo = Console.ReadLine().ToUpper();
+            char sexo = char.Parse(Console.ReadLine().ToUpper());
 
-            if(sexo == 'M')
+            if (sexo == 'M')
             {
-                pesoIdealHomem = 72.7 * altura - 58;
-                Console.Write($"O peso ideal para homens nessa altura é de {pesoIdealHomem}Kg");
+                pesoIdealHomem = 72.7 * altura - 58.0;
+                Console.Write($"O peso ideal para homens com altura de {altura}m é de {pesoIdealHomem}Kg");
             }
-            else if(sexo == 'F')
+            else if (sexo == 'F')
             {
                 pesoIdealMulher = 62.1 * altura - 44.7;
-                Console.Write($"O peso ideal para mulheres nessa altura é de {pesoIdealMulher}Kg");
+                Console.Write($"O peso ideal para mulheres com altura de {altura}m é de {pesoIdealMulher}Kg");
             }
             else
             {
                 Console.Write("Error: Dado inválido!\nEntre com M para masculino e F para feminino.");
             }
-            Console.ReadKey;
+            Console.ReadKey();
         }
 
         static void Main(string[] args)
@@ -225,22 +225,24 @@ namespace Lista01
 
             while (opcao != 0)
             {
-                Console.Clear();
-                Console.WriteLine("Escolha a opção do exercício a ser executado");
-                Console.Write("01.......Exercício01\n" +
-                    "02.......Exercício02\n" +
-                    "03.......Exercício03\n" +
-                    "04.......Exercício04\n" +
-                    "05.......Exercício05\n" +
-                    "06.......Exercício06\n" +
-                    "07.......Exercício07\n" +
-                    "08.......Exercício08\n" +
-                    "09.......Exercício09\n" +
-                    "10.......Exercício10\n" +
-                    "11.......Exercício11\n" +
-                    "12.......Exercício12\n" +
-                    "0.......Sair\n\n");
-
+                 Console.Clear();
+                Console.WriteLine("           Bem-vindo a Lista01!\n\nEscolha a opção do exercício a ser executado");
+                Console.WriteLine("   __________________________________");
+                Console.Write("   01.....................Exercício01\n" +
+                    "   02.....................Exercício02\n" +
+                    "   03.....................Exercício03\n" +
+                    "   04.....................Exercício04\n" +
+                    "   05.....................Exercício05\n" +
+                    "   06.....................Exercício06\n" +
+                    "   07.....................Exercício07\n" +
+                    "   08.....................Exercício08\n" +
+                    "   09.....................Exercício09\n" +
+                    "   10.....................Exercício10\n" +
+                    "   11.....................Exercício11\n" +
+                    "   12.....................Exercício12\n" +
+                    "   0.............................Sair\n");
+                Console.WriteLine("   __________________________________\n");
+                
                 Console.Write("Digite a opção: ");
                 opcao = int.Parse(Console.ReadLine());
 
