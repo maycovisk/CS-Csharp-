@@ -194,7 +194,27 @@ namespace Lista01
 
         static void Exercicio12()
         {
+            double pesoIdealHomem, pesoIdealMulher, altura;
+            Console.Write("Digite a altura: ");
+            altura = Console.ReadLine();
+            Console.Write("Digite seu sexo (M para masculino ou F para feminino): ");
+            char sexo = Console.ReadLine().ToUpper();
 
+            if(sexo == 'M')
+            {
+                pesoIdealHomem = 72.7 * altura - 58;
+                Console.Write($"O peso ideal para homens nessa altura é de {pesoIdealHomem}Kg");
+            }
+            else if(sexo == 'F')
+            {
+                pesoIdealMulher = 62.1 * altura - 44.7;
+                Console.Write($"O peso ideal para mulheres nessa altura é de {pesoIdealMulher}Kg");
+            }
+            else
+            {
+                Console.Write("Error: Dado inválido!\nEntre com M para masculino e F para feminino.");
+            }
+            Console.ReadKey;
         }
 
         static void Main(string[] args)
