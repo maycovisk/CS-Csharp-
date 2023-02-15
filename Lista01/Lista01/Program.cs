@@ -50,42 +50,28 @@ namespace Lista01
 
         static void Exercicio4()
         {
-            Console.Write("Digite seu peso em Kg: ");
+            Console.Write("Digite seu peso em quilos(Kg): ");
             double peso = double.Parse(Console.ReadLine());
-            Console.Write("Digite seu altura em M: ");
+            Console.Write("Digite seu altura em metros(M): ");
             double altura = double.Parse(Console.ReadLine());
 
             double imc = peso / (altura * altura);
 
-            Console.Write("O IMC é:" + imc);
+            Console.Write($"O IMC é: {imc:F2}\n");
             if (imc < 16.9F)
-            {
                 Console.Write("Muito abaixo do peso!");
-            }
             else if (imc >= 17 && imc <= 18.4)
-            {
-                Console.Write("Abaixo do peso!");
-            }
+                 Console.Write("Abaixo do peso!");
             else if (imc >= 18.5 && imc <= 24.9)
-            {
                 Console.Write("Peso normal!");
-            }
             else if (imc >= 25 && imc <= 29.9)
-            {
                 Console.Write("Acima do peso!");
-            }
             else if (imc >= 30 && imc <= 34.9)
-            {
                 Console.Write("Obesidade grau I!");
-            }
             else if (imc >= 35 && imc <= 40)
-            {
                 Console.Write("Obesidade grau II!");
-            }
             else
-            {
                 Console.Write("Obesidade grau III!");
-            }
 
             Console.ReadKey();
         }
