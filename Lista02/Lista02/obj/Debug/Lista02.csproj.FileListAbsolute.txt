@@ -1,0 +1,8 @@
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\obj\Debug\Lista02.csproj.AssemblyReference.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\obj\Debug\Lista02.csproj.SuggestedBindingRedirects.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\obj\Debug\Lista02.csproj.CoreCompileInputs.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\bin\Debug\Lista02.exe.config
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\bin\Debug\Lista02.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\bin\Debug\Lista02.pdb
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\obj\Debug\Lista02.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\obj\Debug\Lista02.pdb
