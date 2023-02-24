@@ -6,3 +6,11 @@ C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\bin\Debug
 C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\bin\Debug\Lista02.pdb
 C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\obj\Debug\Lista02.exe
 C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista02\Lista02\obj\Debug\Lista02.pdb
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\bin\Debug\Lista02.exe.config
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\bin\Debug\Lista02.exe
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\bin\Debug\Lista02.pdb
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\obj\Debug\Lista02.csproj.AssemblyReference.cache
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\obj\Debug\Lista02.csproj.SuggestedBindingRedirects.cache
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\obj\Debug\Lista02.csproj.CoreCompileInputs.cache
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\obj\Debug\Lista02.exe
+C:\Users\cj3014771\Downloads\CS-Csharp--main\CS-Csharp--main\Lista02\Lista02\obj\Debug\Lista02.pdb

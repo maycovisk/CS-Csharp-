@@ -62,7 +62,7 @@ namespace Lista01
 
             do
             {
-                Console.Write("Numero {0}: ", contador + 1);
+                Console.Write("{0}º Numero: ", contador + 1);
                 num = int.Parse(Console.ReadLine());
 
                 if(num >= 0)
@@ -103,6 +103,16 @@ namespace Lista01
         {
             Console.Write("Digite um número P positivo: ");
             int p = int.Parse(Console.ReadLine());
+            int cubo = (int) Math.Pow(p, 3);
+            int[] num = new int[cubo];
+
+            for(int i = 0; i < num.Length; i++)
+            {
+                if(i % 4 == 0 && i % 6 != 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
 
             
             Console.ReadKey();
@@ -129,14 +139,21 @@ namespace Lista01
             Console.Write("Digite um número de linhas: ");
             int numLinhas = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= numLinhas; i++)
+            for(int i = 0; i <= numLinhas*2; i++)
+                if(i % 2 != 0)
+                    Console.WriteLine(new string(' ', (numLinhas*2 - i) /2 ) + new string('*', i));
+            /*for (int i = 1; i <= numLinhas; i++)
             {
-                for (int j = 1; j <= i; j++)
+                for(int j = espacoEmBranco-i; j > 0; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j <= (i*2)-1; j++)
                 {
                     Console.Write("*");
                 }
                 Console.WriteLine();
-            }
+            }*/
             Console.ReadKey();
         }
 
@@ -149,7 +166,7 @@ namespace Lista01
             while (opcao != 0)
             {
                 Console.Clear();
-                Console.WriteLine("           Bem-vindo a Lista01!\n\nEscolha a opção do exercício a ser executado");
+                Console.WriteLine("           Bem-vindo a Lista02!\n\nEscolha a opção do exercício a ser executado");
                 Console.WriteLine("   __________________________________");
                 Console.Write("   01.....................Exercício01\n" +
                     "   02.....................Exercício02\n" +
