@@ -20,19 +20,19 @@ que são ao mesmo tempo divisíveis por 4, mas não por 6.
 5. Crie um programa que seja capaz de apresentar uma figura similar à apresentada abaixo. O usuário
 entrará somente com o número de linhas e o caractere a ser utilizado na apresentação final. No
 exemplo, o número de linhas foi 5 e o caractere foi o asterisco.
-*
-**
-***
-****
-*****
+<br>\*
+<br>\**
+<br>\***
+<br>\****
+<br>\*****
 6. Crie um programa que seja capaz de apresentar uma figura similar à apresentada abaixo. O usuário
 entrará somente com o número de linhas e o caractere a ser utilizado na apresentação final. No
 exemplo, o número de linhas foi 5 e o caractere foi o asterisco.
-    *
-   ***
-  *****
- *******
-*********
+<br>    *
+<br>   ***
+<br>  *****
+<br> *******
+<br>*********
 
 <br>
 <br>
