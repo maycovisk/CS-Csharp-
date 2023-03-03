@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -120,6 +120,96 @@ namespace Lista03
             Console.ReadKey();
         }
 
+        static void Exercicio4Tabuleiro(char casas[3,3]) 
+        { 
+            Console.Clear();
+            Console.WriteLine(
+                    $"{casas[0,0]}|{casas[0,1]}|{casas[0,2]}" +
+                    "-------------------" +
+                    $"{casas[1,0]}|{casas[1,1]}|{casas[1,2]}" +
+                    "-------------------" +
+                    $"{casas[2,0]}|{casas[2,1]}|{casas[2,2]}"
+                );
+        }
+
+        static void Exercicio4()
+        {
+            char[,] casas = new char[3,3];
+            char continuarJogando;
+            int contadorJogadas, line, column, turno = 0, i, j;
+
+            do
+            {
+                contadorJogadas = 1;
+                for (i = 0; i <= 2; i++)
+                {
+                    for (j = 0; j <= 2; j++)
+                    {
+                        casas[i,j] = ' ';
+                    }
+                }
+                do
+                {
+                    Exercicio4Tabuleiro(casas);
+                    if (turno % 2 == 0)
+                        Console.WriteLine("Turno do jogador X");
+                    else
+                        Console.WriteLine("Turno do jogador O");
+
+                    Console.Write("Digite a linha: ");
+                    line = int.Parse(Console.ReadLine());
+                    Console.Write("Digite a coluna: ");
+                    column = int.Parse(Console.ReadLine());
+
+                    if (line < 1 || column < 1 || line > 3 || column > 3)
+                    {
+                        line = 0;
+                        column = 0;
+                    }
+                    else if (casas[line - 1,column - 1] != ' ')
+                    {
+                        line = 0;
+                        column = 0;
+                    }
+                    else
+                    {
+                        if (turno % 2 == 0)
+                            casas[line - 1,column - 1] = 'X';
+                        else
+                            casas[line - 1,column - 1] = 'O';
+                        turno++;
+                        contadorJogadas++;
+                    }
+                    if (casas[0,0] == 'X' && casas[0,1] == 'X' && casas[0,2] == 'X') { contadorJogadas = 11; }
+                    if (casas[1,0] == 'X' && casas[1,1] == 'X' && casas[1,2] == 'X') { contadorJogadas = 11; }
+                    if (casas[2,0] == 'X' && casas[2,1] == 'X' && casas[2,2] == 'X') { contadorJogadas = 11; }
+                    if (casas[0,0] == 'X' && casas[1,0] == 'X' && casas[2,0] == 'X') { contadorJogadas = 11; }
+                    if (casas[0,1] == 'X' && casas[1,1] == 'X' && casas[2,1] == 'X') { contadorJogadas = 11; }
+                    if (casas[0,2] == 'X' && casas[1,2] == 'X' && casas[2,2] == 'X') { contadorJogadas = 11; }
+                    if (casas[0,0] == 'X' && casas[1,1] == 'X' && casas[2,2] == 'X') { contadorJogadas = 11; }
+                    if (casas[0,2] == 'X' && casas[1,1] == 'X' && casas[2,0] == 'X') { contadorJogadas = 11; }
+
+                    if (casas[0,0] == 'O' && casas[0,1] == 'O' && casas[0,2] == 'O') { contadorJogadas = 12; }
+                    if (casas[1,0] == 'O' && casas[1,1] == 'O' && casas[1,2] == 'O') { contadorJogadas = 12; }
+                    if (casas[2,0] == 'O' && casas[2,1] == 'O' && casas[2,2] == 'O') { contadorJogadas = 12; }
+                    if (casas[0,0] == 'O' && casas[1,0] == 'O' && casas[2,0] == 'O') { contadorJogadas = 12; }
+                    if (casas[0,1] == 'O' && casas[1,1] == 'O' && casas[2,1] == 'O') { contadorJogadas = 12; }
+                    if (casas[0,2] == 'O' && casas[1,2] == 'O' && casas[2,2] == 'O') { contadorJogadas = 12; }
+                    if (casas[0,0] == 'O' && casas[1,1] == 'O' && casas[2,2] == 'O') { contadorJogadas = 12; }
+                    if (casas[0,2] == 'O' && casas[1,1] == 'O' && casas[2,0] == 'O') { contadorJogadas = 12; }
+                } while (contadorJogadas <= 9);
+                Exercicio4Tabuleiro(casas);
+                if (contadorJogadas == 10)
+                    Console.WriteLine("Jogo Empatado");
+                if (contadorJogadas == 11)
+                    Console.WriteLine("Jogador X WINS!");
+                if (contadorJogadas == 12)
+                    Console.WriteLine("Jogador O WINS!");
+                Console.Write("Deseja jogar novamente? [S / N]");
+                continuarJogando = Console.ReadLine();
+            } while (continuarJogando == 's' || continuarJogando == 'S');
+        }
+
 
 
         static void Main(string[] args)
@@ -153,6 +243,9 @@ namespace Lista03
                         break;
                     case 3:
                         Exercicio3();
+                        break;
+                    case 4:
+                        Exercicio4();
                         break;
                     default:
                         break;
