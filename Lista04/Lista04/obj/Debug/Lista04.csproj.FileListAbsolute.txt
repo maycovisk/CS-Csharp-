@@ -1,0 +1,8 @@
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\bin\Debug\Lista04.exe.config
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\bin\Debug\Lista04.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\bin\Debug\Lista04.pdb
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\obj\Debug\Lista04.csproj.AssemblyReference.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\obj\Debug\Lista04.csproj.SuggestedBindingRedirects.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\obj\Debug\Lista04.csproj.CoreCompileInputs.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\obj\Debug\Lista04.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista04\Lista04\Lista04\obj\Debug\Lista04.pdb
