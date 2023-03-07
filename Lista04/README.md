@@ -1,6 +1,6 @@
 ﻿## LISTA04
 
-### Explique e exemplifique com codigos em C# as seguintes propriedades ou metodos relacionados a strings:
+### Explique e exemplifique com codigos em C# as seguintes propriedades ou métodos relacionados a strings:
 * Legth, 
 * ToCharArray,
 * Trim,
