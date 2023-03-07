@@ -120,15 +120,15 @@ namespace Lista03
             Console.ReadKey();
         }
 
-        static void Exercicio4Tabuleiro(char casas[3,3]) 
+        static void Exercicio4Tabuleiro(char tabuleiro[3,3]) 
         { 
             Console.Clear();
             Console.WriteLine(
-                    $"{casas[0,0]}|{casas[0,1]}|{casas[0,2]}" +
+                    $"{tabuleiro[0,0]}|{tabuleiro[0,1]}|{tabuleiro[0,2]}" +
                     "-------------------" +
-                    $"{casas[1,0]}|{casas[1,1]}|{casas[1,2]}" +
+                    $"{tabuleiro[1,0]}|{tabuleiro[1,1]}|{tabuleiro[1,2]}" +
                     "-------------------" +
-                    $"{casas[2,0]}|{casas[2,1]}|{casas[2,2]}"
+                    $"{tabuleiro[2,0]}|{tabuleiro[2,1]}|{tabuleiro[2,2]}"
                 );
         }
 
