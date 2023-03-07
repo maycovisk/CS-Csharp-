@@ -120,7 +120,7 @@ namespace Lista03
             Console.ReadKey();
         }
 
-        static void Exercicio4Tabuleiro(char tabuleiro[3,3]) 
+        static void Exercicio4Tabuleiro(char[,] tabuleiro) 
         { 
             Console.Clear();
             Console.WriteLine(
