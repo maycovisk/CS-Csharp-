@@ -124,11 +124,12 @@ namespace Lista03
         { 
             Console.Clear();
             Console.WriteLine(
-                    $"{tabuleiro[0,0]}|{tabuleiro[0,1]}|{tabuleiro[0,2]}" +
-                    "-------------------" +
-                    $"{tabuleiro[1,0]}|{tabuleiro[1,1]}|{tabuleiro[1,2]}" +
-                    "-------------------" +
-                    $"{tabuleiro[2,0]}|{tabuleiro[2,1]}|{tabuleiro[2,2]}"
+                    $"         col 1|col 2|col 3 \n" +
+                    $"Linha 1    {tabuleiro[0,0]}  |  {tabuleiro[0,1]}  |  {tabuleiro[0,2]}  " +
+                    "\n         -----------------\n" +
+                    $"Linha 2    {tabuleiro[1,0]}  |  {tabuleiro[1,1]}  |  {tabuleiro[1,2]}  " +
+                    "\n         -----------------\n" +
+                    $"Linha 3    {tabuleiro[2,0]}  |  {tabuleiro[2,1]}  |  {tabuleiro[2,2]  }"
                 );
         }
 
@@ -151,12 +152,9 @@ namespace Lista03
                 do
                 {
                     Exercicio4Tabuleiro(casas);
-                    if (turno % 2 == 0)
-                        Console.WriteLine("Turno do jogador X");
-                    else
-                        Console.WriteLine("Turno do jogador O");
+                    Console.WriteLine(turno % 2 == 0 ? "\nTurno do jogador X" : "\nTurno do jogador O");
 
-                    Console.Write("Digite a linha: ");
+                    Console.Write("\nDigite a linha: ");
                     line = int.Parse(Console.ReadLine());
                     Console.Write("Digite a coluna: ");
                     column = int.Parse(Console.ReadLine());
@@ -166,7 +164,7 @@ namespace Lista03
                         line = 0;
                         column = 0;
                     }
-                    else if (casas[line - 1,column - 1] != ' ')
+                    else if (casas[line - 1, column - 1] != ' ')
                     {
                         line = 0;
                         column = 0;
@@ -174,9 +172,9 @@ namespace Lista03
                     else
                     {
                         if (turno % 2 == 0)
-                            casas[line - 1,column - 1] = 'X';
+                            casas[line - 1, column - 1] = 'X';
                         else
-                            casas[line - 1,column - 1] = 'O';
+                            casas[line - 1, column - 1] = 'O';
                         turno++;
                         contadorJogadas++;
                     }
@@ -206,7 +204,7 @@ namespace Lista03
                 if (contadorJogadas == 12)
                     Console.WriteLine("Jogador O WINS!");
                 Console.Write("Deseja jogar novamente? [S / N]");
-                continuarJogando = Console.ReadLine();
+                continuarJogando = char.Parse(Console.ReadLine());
             } while (continuarJogando == 's' || continuarJogando == 'S');
         }
 

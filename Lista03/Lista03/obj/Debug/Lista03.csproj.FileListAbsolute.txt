@@ -11,3 +11,11 @@ C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\ReactJS\Lista03\maycovisk\CS-Csha
 C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\ReactJS\Lista03\maycovisk\CS-Csharp-\Lista03\Lista03\obj\Debug\Lista03.csproj.CoreCompileInputs.cache
 C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\ReactJS\Lista03\maycovisk\CS-Csharp-\Lista03\Lista03\obj\Debug\Lista03.exe
 C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\ReactJS\Lista03\maycovisk\CS-Csharp-\Lista03\Lista03\obj\Debug\Lista03.pdb
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\obj\Debug\Lista03.csproj.AssemblyReference.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\obj\Debug\Lista03.csproj.SuggestedBindingRedirects.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\obj\Debug\Lista03.csproj.CoreCompileInputs.cache
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\obj\Debug\Lista03.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\obj\Debug\Lista03.pdb
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\bin\Debug\Lista03.exe.config
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\bin\Debug\Lista03.exe
+C:\Users\Manutenção Sx\Desktop\PROGRAMAÇÃO\C Sharp\Lista03\Lista03\bin\Debug\Lista03.pdb
