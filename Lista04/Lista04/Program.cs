@@ -63,7 +63,7 @@ namespace Lista04
         {
             Console.WriteLine("**O método Split divide uma string em substrings com base em um separador especificado e retorna uma matriz das substrings resultantes.**");
             
-            string exemploString = "Marques,Paulo,Helton,João,Avelino,Jorge";
+            string exemploString = "Marques,Paulo,Elton,João,Avelino,Jorge";
             Console.WriteLine(exemploString);
             
             string[] fruits = exemploString.Split(',');
