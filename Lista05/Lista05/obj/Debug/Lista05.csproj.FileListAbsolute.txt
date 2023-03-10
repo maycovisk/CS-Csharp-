@@ -1,0 +1,8 @@
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\obj\Debug\Lista05.csproj.AssemblyReference.cache
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\obj\Debug\Lista05.csproj.SuggestedBindingRedirects.cache
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\obj\Debug\Lista05.csproj.CoreCompileInputs.cache
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\bin\Debug\Lista05.exe.config
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\bin\Debug\Lista05.exe
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\bin\Debug\Lista05.pdb
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\obj\Debug\Lista05.exe
+C:\Users\cj3014771\source\repos\Lista03\Lista05\Lista05\obj\Debug\Lista05.pdb
