@@ -8,7 +8,7 @@ Discente:_____________________________________________________________________
 Importante: Entregue o link do seu repositório público no GitHub (5% extras) ou envie a pasta do 
 seu projeto zipada contendo todo o exercício. 
 Questões de Programação
-1. Crie um programa que apresente ao usuário uma mensagem de boas-vindas conforme 
+<br> 1. Crie um programa que apresente ao usuário uma mensagem de boas-vindas conforme 
 padrão descrito abaixo:
 
 
@@ -18,10 +18,12 @@ hora atual de execução do programa. O “MARQU” é o nome do usuário da má
 deve ser capturado pelo código. O nome da máquina deve também ser capturado e 
 apresentado após a mensagem “Você está utilizando a máquina ”. A data do dia deve ser 
 apresentada no formato contido na última linha da imagem acima.
-2. Após a apresentação inicial, desenvolva um trecho de código que seja capaz de descobrir 
+
+<br> 2. Após a apresentação inicial, desenvolva um trecho de código que seja capaz de descobrir 
 na string abaixo, quais são os 5 números consecutivos que retornam o maior produto.
 Mostre quais foram esses números. Você precisa utilizar comandos em código para retirar 
 eventuais caracteres que não serão utilizados na atividade. 
+<br><br>
 3.2649195;9300419;8240871%2791073;3917173;9851056#9925124,4763040.0965918;93
 09297%1010589;5634190,7310819#0258142,0929306.0592849#2628868;1392209;49417
 11%6802169%3655235.1180040#6889981;4529558,3395538;3095206.8162707,5306168
@@ -38,5 +40,6 @@ eventuais caracteres que não serão utilizados na atividade.
 1%8866454,3964222#3314980#8428029.2546101;7316677%0460178;8789264;9316756.
 1965642;7585590,7383219;9062609,8482023,5717895;2684729;0466794%5370084,0484
 922;4599156,5815576%3414149.1343440#16129
-3. Mostre ao final todas as substrings que terminam com a cadeia de caracteres “11” e a 
+
+<br><br> 3. Mostre ao final todas as substrings que terminam com a cadeia de caracteres “11” e a 
 soma inteira desses caracteres contidos em cada substring
