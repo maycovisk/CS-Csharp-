@@ -44,7 +44,7 @@ namespace Lista03
             string maxNumerosProdutos = "";
             int strLenght = 5;
 
-            for(int i = 0; i < /* AQUI */ ; i++)
+            for(int i = 0; i < limparString.Length - strLenght; i++)
             {
                 string sequencia = limparString.Substring(i , strLenght);
                 int produto = 0;
