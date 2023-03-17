@@ -34,11 +34,17 @@ namespace PizzariaIFSP
 
         public override string ToString()
         {
-            return
-                "\nNOME: " + Nome +
-                "\nTELEFONE:" + Telefone +
-                "\nEMAIL:" + Email +
-                "\nNASCIMENTO: " + DatNasc.ToShortDateString();
+            string saida =  "\nNOME: " + Nome +
+                            "\nTELEFONE:" + Telefone +
+            if(!String.IsNullOrEmpty(Email))
+                saida = saida + "\nEMAIL:" + Email;
+            if(!(DatNasc.CompareTo(Convert.ToDateTime("01/01/0001")) == 0))
+            //if(DatNasc.ToShortDateString() == Convert.ToDateTime("01/01/0001").ToString())
+                saida += "\nNASCIMENTO: " + DatNasc.ToShortDateString();
+            return saida;
+                
+               
+                
         }
     }
 }
