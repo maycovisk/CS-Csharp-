@@ -8,10 +8,10 @@ namespace PizzariaIFSP
 {
     internal class Cliente
     {
-        private string Nome;
-        private string Telefone;
-        private string Email;
-        private DateTime DatNasc;
+        private string nome;
+        private string telefone;
+        private string email;
+        private DateTime datNasc;
 
         public Cliente(string nome, string tel)
         {
@@ -29,6 +29,7 @@ namespace PizzariaIFSP
         public String telefone
         {
             get { return Telefone; }
+            set { telefone = value; }
         }
 
         public override string ToString()
