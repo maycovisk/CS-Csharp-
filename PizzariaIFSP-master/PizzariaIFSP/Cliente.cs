@@ -8,6 +8,7 @@ namespace PizzariaIFSP
 {
     internal class Cliente
     {
+        private int id;
         private string nome;
         private string telefone;
         private string email;
@@ -25,7 +26,7 @@ namespace PizzariaIFSP
             Email = email;
             DatNasc = datNasc;
         }
-
+      
         public String telefone
         {
             get { return Telefone; }
