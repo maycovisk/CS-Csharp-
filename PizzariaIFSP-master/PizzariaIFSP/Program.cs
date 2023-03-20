@@ -60,11 +60,13 @@ namespace PizzariaIFSP
                         }
                         break;
                     case 3:
-                        Console.WriteLine("Entre com o telefone a ser pesquisado: ");
-                        telefone = Console.ReadLine();
+                        Console.WriteLine("Pesquise pelo nome: ");
+                        string pesquisarNome = Console.ReadLine();
+                        
                         for (int i = 0; i < qtd; i++)
                         {
-                            if (vetCli[i].Telefone == telefone)
+                            
+                            if (vetCli[i].Nome.Contains(pesquisarNome))
                             {
                                 int op;
                                 do
@@ -107,15 +109,20 @@ namespace PizzariaIFSP
                         }
                         break;
                     case 4:
-                        Console.WriteLine("Digite o número de telefone: ");
-                        telefone = Console.ReadLine();
+                        Console.WriteLine("Pesquise pelo nome: ");
+                        pesquisarNome = Console.ReadLine();
                         for (int i = 0; i < qtd; i++)
                         {
-                            if (vetCli[i].Telefone == telefone)
+                            if (vetCli[i].Nome.Contains(pesquisarNome))
                             {
                                 vetCli[i] = vetCli[qtd - 1];
                                 qtd--;
+                                Console.WriteLine("Excluido com sucesso");
                                 break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Cliente não encontrado");
                             }
                         }
                         break;
@@ -148,7 +155,7 @@ namespace PizzariaIFSP
                         Console.WriteLine("Opção inválida!");
                         break;
                 }
-
+            
             } while (opcao != 0);
 
 
