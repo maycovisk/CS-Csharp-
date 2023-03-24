@@ -6,3 +6,11 @@ C:\Users\cj3014771\Desktop\CS-Csharp--main (1)\CS-Csharp--main\PizzariaIFSP-mast
 C:\Users\cj3014771\Desktop\CS-Csharp--main (1)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.csproj.CoreCompileInputs.cache
 C:\Users\cj3014771\Desktop\CS-Csharp--main (1)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.exe
 C:\Users\cj3014771\Desktop\CS-Csharp--main (1)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.pdb
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.csproj.AssemblyReference.cache
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.csproj.SuggestedBindingRedirects.cache
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.csproj.CoreCompileInputs.cache
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.exe
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\obj\Debug\PizzariaIFSP.pdb
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\bin\Debug\PizzariaIFSP.exe.config
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\bin\Debug\PizzariaIFSP.exe
+C:\Users\cj3014771\Downloads\CS-Csharp--main (2)\CS-Csharp--main\PizzariaIFSP-master\PizzariaIFSP\bin\Debug\PizzariaIFSP.pdb

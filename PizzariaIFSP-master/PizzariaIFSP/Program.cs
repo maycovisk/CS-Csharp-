@@ -4,10 +4,92 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PizzariaIFSP
 {
     internal class Program
     { 
+        static Cliente Cadastrar(int id)
+        {
+            string nome, telefone;  
+            Cliente aux;
+
+            Console.WriteLine("Nome: ");
+            nome = Console.ReadLine();
+            Console.WriteLine("Telefone: ");
+            telefone = Console.ReadLine();
+            Console.WriteLine("Quer preencher e-mail " +
+                "e data de nascimento? 1 - Sim ou 0 - Não");
+            int escolha = int.Parse(Console.ReadLine());
+            if (escolha == 1)
+            {
+                Console.WriteLine("Email: ");
+                string email = Console.ReadLine();
+                Console.WriteLine("Data de nascimento: ");
+                DateTime nasc = Convert.ToDateTime(Console.ReadLine());
+                aux = new Cliente(
+                    id, nome, telefone, email, nasc);
+                //vetCli[qtd++] = new Cliente(
+                //    qtd, nome, telefone, email, nasc);
+            }
+            else
+            {
+                aux = new Cliente(
+                    id, nome, telefone);
+            }
+            return aux;
+        }
+
+        static Cliente Editar(Cliente cli)
+        {
+            Console.WriteLine("Pesquise pelo nome: ");
+            
+
+            for (int i = 0; i < qtd; i++)
+            {
+
+                if (vetCli[i].Nome.Contains(pesquisarNome))
+                {
+                    int op;
+                    do
+                    {
+                        Console.WriteLine("Estes são os dados do cliente: ");
+                        Console.WriteLine(vetCli[i].ToString());
+                        Console.WriteLine("======= OPÇÕES =======");
+                        Console.WriteLine("    SAIR DA EDIÇÃO - 0");
+                        Console.WriteLine("       EDITAR NOME - 1");
+                        Console.WriteLine("   EDITAR TELEFONE - 2");
+                        Console.WriteLine("     EDITAR E-MAIL - 3");
+                        Console.WriteLine("       EDITAR DATA - 4");
+                        op = int.Parse(Console.ReadLine());
+                        switch (op)
+                        {
+                            case 1:
+                                Console.WriteLine("Nome: ");
+                                vetCli[i].Nome = Console.ReadLine();
+                                break;
+                            case 2:
+                                Console.WriteLine("Telefone: ");
+                                vetCli[i].Telefone = Console.ReadLine();
+                                break;
+                            case 3:
+                                Console.WriteLine("E-mail: ");
+                                vetCli[i].Email = Console.ReadLine();
+                                break;
+                            case 4:
+                                Console.WriteLine("Data de nascimento: ");
+                                vetCli[i].DatNasc = Convert.ToDateTime(Console.ReadLine());
+                                break;
+                            default:
+                                Console.WriteLine("Opção inválida!" +
+                                    "\nCliente não atualizado!");
+                                break;
+                        }
+                    } while (op != 0);
+                    break;
+                }
+            } return cli;
+        }
         static int Menu()
         {
             Console.WriteLine("\nSAIR -------- 0");
@@ -20,9 +102,11 @@ namespace PizzariaIFSP
         }
         static void Main(string[] args)
         {
+            
             int qtd = 0, opcao;
             string telefone, nome;
-            Cliente[] vetCli = new Cliente[100];
+            //Cliente[] vetCli = new Cliente[100];
+            List<Cliente> listaCli = new List<Cliente>();
             do {
                 opcao = Menu();
                 switch (opcao)
@@ -31,82 +115,18 @@ namespace PizzariaIFSP
                         Console.WriteLine("Tchau!");
                         break;
                     case 1:
-                        Console.WriteLine("Nome: ");
-                        nome = Console.ReadLine();
-                        Console.WriteLine("Telefone: ");
-                        telefone = Console.ReadLine();
-                        Console.WriteLine("Quer preencher e-mail " +
-                            "e data de nascimento? 1 - Sim ou 0 - Não");
-                        int escolha = int.Parse(Console.ReadLine());
-                        if (escolha == 1)
-                        {
-                            Console.WriteLine("Email: ");
-                            string email = Console.ReadLine();
-                            Console.WriteLine("Data de nascimento: ");
-                            DateTime nasc = Convert.ToDateTime(Console.ReadLine());
-                            vetCli[qtd++] = new Cliente(
-                                qtd, nome, telefone, email, nasc);
-                        }
-                        else
-                        {
-                            vetCli[qtd++] = new Cliente(
-                                qtd, nome, telefone);
-                        }
+
+                        listaCli.Add(Cadastrar(listaCli.Count + 1));               
+                        
                         break;
                     case 2:
-                        for (int i = 0; i < qtd; i++)
+                        foreach(Cliente c in listaCli)
                         {
-                            Console.WriteLine(vetCli[i].ToString());
+                            Console.WriteLine(c.ToString());
                         }
                         break;
                     case 3:
-                        Console.WriteLine("Pesquise pelo nome: ");
-                        string pesquisarNome = Console.ReadLine();
-                        
-                        for (int i = 0; i < qtd; i++)
-                        {
-                            
-                            if (vetCli[i].Nome.Contains(pesquisarNome))
-                            {
-                                int op;
-                                do
-                                {
-                                    Console.WriteLine("Estes são os dados do cliente: ");
-                                    Console.WriteLine(vetCli[i].ToString());
-                                    Console.WriteLine("======= OPÇÕES =======");
-                                    Console.WriteLine("    SAIR DA EDIÇÃO - 0");
-                                    Console.WriteLine("       EDITAR NOME - 1");
-                                    Console.WriteLine("   EDITAR TELEFONE - 2");
-                                    Console.WriteLine("     EDITAR E-MAIL - 3");
-                                    Console.WriteLine("       EDITAR DATA - 4");
-                                    op = int.Parse(Console.ReadLine());
-                                    switch (op)
-                                    {
-                                        case 1:
-                                            Console.WriteLine("Nome: ");
-                                            vetCli[i].Nome = Console.ReadLine();
-                                            break;
-                                        case 2:
-                                            Console.WriteLine("Telefone: ");
-                                            vetCli[i].Telefone = Console.ReadLine();
-                                            break;
-                                        case 3:
-                                            Console.WriteLine("E-mail: ");
-                                            vetCli[i].Email = Console.ReadLine();
-                                            break;
-                                        case 4:
-                                            Console.WriteLine("Data de nascimento: ");
-                                            vetCli[i].DatNasc = Convert.ToDateTime(Console.ReadLine());
-                                            break;
-                                        default:
-                                            Console.WriteLine("Opção inválida!" +
-                                                "\nCliente não atualizado!");
-                                            break;
-                                    }
-                                } while (op != 0);
-                                break;
-                            }
-                        }
+                        Class1.Consulta(cli);
                         break;
                     case 4:
                         Console.WriteLine("Pesquise pelo nome: ");
@@ -127,7 +147,8 @@ namespace PizzariaIFSP
                         }
                         break;
                     case 5:
-                        string digitou = String.Empty;
+                        Class1.Consulta(vetCli, qtd);
+                        /*string digitou = String.Empty;
 
                         Console.WriteLine("Digite algo para pesquisar...");
                         ConsoleKeyInfo simb = Console.ReadKey();
@@ -148,7 +169,7 @@ namespace PizzariaIFSP
                             Console.WriteLine("\nNome procurado:" + digitou);
                             Console.WriteLine("Digite enter para encerrar...");
                             simb = Console.ReadKey();
-                        }
+                        }*/
 
                             break;
                     default:

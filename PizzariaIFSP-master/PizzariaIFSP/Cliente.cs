@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzariaIFSP
 {
-    internal class Cliente
+    public class Cliente
     {
         private int id;
         private string nome;

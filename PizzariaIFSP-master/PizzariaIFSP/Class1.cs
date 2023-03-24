@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PizzariaIFSP
 {
-    public abstract class Consulta
+    public abstract class Class1
     {
-        public static void Consulta()
+        public static void Consulta(List<Cliente> vetCli)
         {
             string digitou = String.Empty;
 
@@ -20,7 +20,7 @@ namespace PizzariaIFSP
                 Console.Clear();
                 Console.WriteLine("Resultados: ");
 
-                for (int i = 0; i < qtd; i++)
+                for (int i = 0; i < vetCli.Count; i++)
                 {
                     if (vetCli[i].Nome.ToUpper().Contains(digitou.ToUpper()))
                     {
