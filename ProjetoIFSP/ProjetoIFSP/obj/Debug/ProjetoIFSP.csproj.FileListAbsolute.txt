@@ -1,0 +1,12 @@
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\bin\Debug\ProjetoIFSP.exe.config
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\bin\Debug\ProjetoIFSP.exe
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\bin\Debug\ProjetoIFSP.pdb
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.csproj.AssemblyReference.cache
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.csproj.SuggestedBindingRedirects.cache
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.pageMain.resources
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.Properties.Resources.resources
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.Resources.loginPage.resources
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.csproj.GenerateResource.cache
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.csproj.CoreCompileInputs.cache
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.exe
+C:\Users\cj3014771\Desktop\Nova pasta\ProjetoIFSP\ProjetoIFSP\obj\Debug\ProjetoIFSP.pdb
