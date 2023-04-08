@@ -1,0 +1,65 @@
+﻿@model HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo, @Model.Nome</h1>
+    <p>Projeto IFSP - Prof. Marques Souza.</p>
+    <span>E-mail logado: @Model.Email</span>
+</div>
+
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">LOGIN</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Login</div>
+                <p></p>
+                <form>
+                    <div class="info field form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="field form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="info field form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="button btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="column right">
+                <div class="text">Cadastrar</div>
+                <form>
+                    <div class="row">
+                        <div class="field col">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="field col">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                        <div class="form-row">
+                            <div class="field col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="field col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
