@@ -1,0 +1,59 @@
+﻿@model List<UsuarioModel>
+@{
+    ViewData["Title"] = "Lista de usuários";
+}
+
+<div class="text-center">
+    <div class="full-box d-grid gap-2 d-md-flex justify-content-md-start  btn-group" role="group">
+        <a role="button" asp-asp-controller="Usuario" asp-action="Criar" class="btn btn-dark">Adicionar</a>
+    </div>
+
+
+    <br />
+    <br />
+
+    <h1 class="display-4">Lista de usuários</h1>
+
+    <table id="table-usuarios" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Login</th>
+                <th scope="col">Email</th>
+                <th scope="col">Data de Cadastro</th>
+                <th scope="col">Data de Atualização</th>
+                <th scope="col">Perfil</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var usuario in Model)
+                {
+                    <tr>
+                        <th scope="row">@usuario.Id</th>
+                        <td>@usuario.Nome</td>
+                        <td>@usuario.Login</td>
+                        <td>@usuario.Email</td>
+                        <td>@usuario.DataCadastro</td>
+                        <td>@usuario.DataAltualizacao</td>
+                        <td>@usuario.Perfil</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a role="button" asp-action="Editar" asp-asp-controller="Usuario" asp-route-id="@usuario.Id" class="btn btn-dark">Editar</a>
+                                <a role="button" asp-action="ApagarConfirmacao" asp-asp-controller="Usuario" asp-route-id="@usuario.Id" class="btn btn-dark">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr class="old"><td valign="top" colspan="5">Nenhum usuário encontrado</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

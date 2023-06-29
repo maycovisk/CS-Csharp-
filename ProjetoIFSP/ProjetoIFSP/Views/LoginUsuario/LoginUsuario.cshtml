@@ -1,0 +1,33 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <button type="button" class="full-box" data-bs-dismiss="alert" arial-label="Close">X</button>
+        @TempData["MensgemErro"]
+    </div>
+}
+
+
+<div id="main-container">
+    <h1>Logar</h1>
+    <form asp-controller="LoginUsuario" asp-action="Entrar" method="post" id="register-form">
+        <div class="full-box">
+            <label for="login">E-mail</label>
+            <input type="email" asp-for="Login" id="login" placeholder="Digite seu e-mail...">
+            @Html.ValidationMessageFor( x => x.Login)
+        </div>
+        <div class="half-box spacing">
+            <label for="senha">Senha</label>
+            <input type="password" asp-for="Senha" id="senha" placeholder="Digite a sua senha...">
+            @Html.ValidationMessageFor( x => x.Senha)
+        </div>
+        <div class="full-box">
+            <input type="submit" id="btn-submit" value="Logar">
+        </div>
+    </form>
+</div>
+<p class="error-validation template"></p>

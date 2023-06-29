@@ -1,0 +1,59 @@
+﻿@model List<ClienteModel>
+@{
+    ViewData["Title"] = "Lista de Cliente";
+}
+
+<div class="text-center">
+    <div class="full-box d-grid gap-2 d-md-flex justify-content-md-start  btn-group" role="group">
+        <a role="button" asp-asp-controller="Cliente" asp-action="Criar" class="btn btn-dark">Adicionar</a>
+    </div>
+
+   
+    <br />
+    <br />
+
+    <h1 class="display-4">Lista de Clientes</h1>
+
+    <table id="table-clientes" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Data de Cadastro</th>
+                <th scope="col">Data de Atualização</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var cliente in Model)
+                {
+                    <tr>
+                        <th scope="row">@cliente.Id</th>
+                        <td>@cliente.Nome</td>
+                        <td>@cliente.Cpf</td>
+                        <td>@cliente.Telefone</td>
+                        <td>@cliente.Email</td>
+                        <td>@cliente.DataCadastro</td>
+                        <td>@cliente.DataAltualizacao</td>
+                        <td>
+                            <div class="full-box d-grid gap-2 d-md-flex justify-content-md-start  btn-group" role="group">
+                                <a role="button" asp-action="Editar" asp-asp-controller="Cliente" asp-route-id="@cliente.Id" class="btn  btn-dark">Editar</a>
+                                <a role="button" asp-action="ApagarConfirmacao" asp-asp-controller="Cliente" asp-route-id="@cliente.Id" class="btn btn-dark">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr class="old"><td valign="top" colspan="5">Nenhum usuário encontrado</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,50 @@
+﻿@model UsuarioModel
+@using ProjetoIFSP.Enums;
+@{
+    ViewData["Title"] = "Cadastrar Usuário";
+}
+
+<div class="text-center">
+
+
+    <h1 class="display-4">Cadastrar Usuário</h1>
+
+
+</div>
+
+<form asp-controller="Usuario" asp-action="Criar" method="post">
+    <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome completo do usuario...">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+
+    <div class="form-group">
+        <label for="cpf">Login</label>
+        <input type="text" asp-for="Login" class="form-control" placeholder="Digite o CPF do usuario...">
+        @Html.ValidationMessageFor(x => x.Login)
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" asp-for="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPerfil">Perfil</label>
+        <select asp-for="Perfil" class="form-control">
+            <option value="">Selecione</option>
+            <option value="@PerfilEnum.Admin">Administrador</option>    
+            <option value="@PerfilEnum.Padrao">Padrão</option>
+        </select>
+        @Html.ValidationMessageFor(x => x.Perfil)
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" asp-for="Senha" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        @Html.ValidationMessageFor(x => x.Senha)
+    </div>
+
+    <button type="submit" class="btn btn-dark">Adicionar</button>
+    <a class="btn btn-block btn-dark" asp-controller="Usuario" asp-action="Index" role="button">Voltar</a>
+</form>

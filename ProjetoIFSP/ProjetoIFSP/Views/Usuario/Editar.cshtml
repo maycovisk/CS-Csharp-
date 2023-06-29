@@ -1,0 +1,47 @@
+﻿@using ProjetoIFSP.Enums;
+@model UsuarioModel
+@{
+    ViewData["Title"] = "Editar Usuário";
+}
+
+<div class="text-center">
+
+
+    <h1 class="display-4">Editar Usuário</h1>
+
+
+</div>
+
+<form asp-controller="Usuario" asp-action="Alterar" method="post">
+
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome completo do cliente...">
+    </div>
+
+    <div class="form-group">
+        <label for="cpf">Login</label>
+        <input type="text" asp-for="Login" class="form-control" placeholder="Digite o CPF do cliente...">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" asp-for="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" asp-for="Senha" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPerfil">Perfil</label>
+        <select asp-for="Perfil" class="form-control">
+            <option value="">Selecione</option>
+            <option value="@PerfilEnum.Admin">Administrador</option>
+            <option value="@PerfilEnum.Padrao">Padrão</option>
+        </select>
+        @Html.ValidationMessageFor(x => x.Perfil)
+    </div>
+    <button type="submit" class="btn btn-dark">Alterar</button>
+    <a class="btn btn-secondary btn-block btn-dark" asp-controller="Usuario" asp-action="Index" role="button">Voltar</a>
+</form>

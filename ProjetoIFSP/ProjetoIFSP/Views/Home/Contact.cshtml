@@ -1,8 +1,85 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Contato";
 }
 <div class="text-center">
     <h1>@ViewData["Title"]</h1>
 
-    <p>Esta página será usada para Contatos.</p>
+
 </div>
+
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contato</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Fale Conosco</div>
+                <p></p>
+                <div class="icons">
+                    <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nome</div>
+                            <div class="sub-title">Maycon Lima</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ion-icon name="earth-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Endereço</div>
+                            <div class="sub-title">Rua dos Bobos, nº 0</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <div class="info">
+                            <div class="head">WhatsApp</div>
+                            <div class="sub-title"><a href="https://api.whatsapp.com/send?phone=5512991665540&text=Ol%C3%A1,%20n%C3%B3s%20da%20AS%20Consultoria%20estamos%20felizes%20pelo%20seu%20contato.%0AEm%" target="_b">(12) 99166-****</a> </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <div class="info">
+                            <div class="head">Facebook</div>
+                            <div class="sub-title"> <a href="#" target="_blank">/mayconlimac</a> </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <div class="info">
+                            <div class="head">Instagram</div>
+                            <div class="sub-title"> <a href="#" target="_blank">/maycovisk</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Mensagem</div>
+                <form action="#" method="POST">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Nome" name="Nome" required>
+                        </div>
+
+                        <div class="field mobile">
+                            <input type="tel" placeholder="Telefone" name="Telefone" data-mask=" (00) 0000-0000" data-mask-selectonfocus="true" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="field">
+                            <input type="email" placeholder="Email" name="Email" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Empresa" name="Empresa" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Escrever..." name="text"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
