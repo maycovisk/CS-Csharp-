@@ -1,0 +1,10 @@
+﻿Compilação iniciada...
+1>------ Compilação iniciada: Projeto: ProjetoIFSP, Configuração: Debug Any CPU ------
+1>Ignorando analisadores para acelerar a construção. Você pode executar o comando 'Build' ou 'Rebuild' para executar os analisadores.
+1>C:\Users\mayco\source\repos\ProjetoIFSP\ProjetoIFSP\Models\HomeModel.cs(5,23,5,27): warning CS0108: "HomeModel.Nome" oculta o membro herdado "UsuarioModel.Nome". Use a nova palavra-chave se foi pretendido ocultar.
+1>C:\Users\mayco\source\repos\ProjetoIFSP\ProjetoIFSP\Models\HomeModel.cs(6,23,6,28): warning CS0108: "HomeModel.Email" oculta o membro herdado "UsuarioModel.Email". Use a nova palavra-chave se foi pretendido ocultar.
+1>C:\Users\mayco\source\repos\ProjetoIFSP\ProjetoIFSP\ViewComponents\Menu.cs(11,53,11,64): warning CS1998: Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.
+1>ProjetoIFSP -> C:\Users\mayco\source\repos\ProjetoIFSP\ProjetoIFSP\bin\Debug\net6.0\ProjetoIFSP.dll
+1>Projeto de compilação pronto "ProjetoIFSP.csproj".
+========== Compilação: 1 bem-sucedida, 0 com falha, 0 atualizada, 0 ignorada ==========
+========== Compilação começou em 11:56 AM e levou 02,805 segundos ==========
